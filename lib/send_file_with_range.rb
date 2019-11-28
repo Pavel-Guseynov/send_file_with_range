@@ -1,3 +1,3 @@
-if defined?(Rails)
-  require 'send_file_with_range/railtie'
-end
+# frozen_string_literal: true
+
+require 'send_file_with_range/railtie' if defined?(Rails)
