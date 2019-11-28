@@ -2,7 +2,7 @@
 
 module SendFileWithRange
   module ControllerExtension
-    def send_file
+    def send_file(path, options = {})
       send_file_with_range(path, options) if options[:range]
 
       super(path, options)
